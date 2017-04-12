@@ -1,5 +1,5 @@
 # The Connection Settings for OpenSSH 6.7+
-Port 22
+Port [ random high #### number ]
 Protocol 2
 #ListenAddress 0.0.0.0
 #ListenAddress ::
@@ -36,11 +36,14 @@ PrintMotd yes
 PrintLastLog yes
 UsePrivilegeSeparation sandbox
 Compression yes
-ClientAliveInterval 600
-ClientAliveCountMax 1
+TCPKeepAlive no
+ClientAliveInterval 30
+ClientAliveCountMax 3
+UseLogin no
 UseDNS no
 PidFile /var/run/sshd.pid
 ShowPatchLevel no
+AcceptEnv LANG LC_*
 
 # no default banner path
 Banner /etc/issue.net
