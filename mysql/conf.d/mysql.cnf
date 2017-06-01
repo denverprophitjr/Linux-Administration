@@ -1,0 +1,4 @@
+[mysql]
+# CLIENT #
+port                           = 3306
+socket                         = /var/lib/mysql/mysql.sock
