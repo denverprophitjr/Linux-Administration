@@ -40,7 +40,6 @@ PrintMotd yes
 PrintLastLog yes
 UsePrivilegeSeparation sandbox
 Compression delayed
-CompressionLevel 6
 ClientAliveInterval 120
 ClientAliveCountMax 3
 UseDNS no
