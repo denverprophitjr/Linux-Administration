@@ -39,7 +39,8 @@ X11Forwarding no
 PrintMotd yes
 PrintLastLog yes
 UsePrivilegeSeparation sandbox
-Compression yes
+Compression delayed
+CompressionLevel 6
 ClientAliveInterval 120
 ClientAliveCountMax 3
 UseDNS no
